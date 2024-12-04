@@ -13,12 +13,12 @@ export function GiftForm() {
     
     if (validateGiftCode(code)) {
       setMessage({
-        type: 'Éxito',
+        type: 'success',
         text: '¡Código válido! Tu regalo estará disponible pronto.'
       });
     } else {
       setMessage({
-        type: 'Error',
+        type: 'error',
         text: 'Código no válido. El código debe contener entre 8 y 10 caracteres, un número y una letra mayúscula.'
       });
     }
